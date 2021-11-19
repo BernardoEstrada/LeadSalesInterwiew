@@ -1,0 +1,31 @@
+{
+  "name": "leadsalesinterwiew",
+  "version": "1.0.0",
+  "description": "Design a parking lot using object-oriented principles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon dist/index.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"Typescript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve\"",
+    "watch-ts": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoEstrada/LeadSalesInterwiew.git"
+  },
+  "author": "Bernardo Estrada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BernardoEstrada/LeadSalesInterwiew/issues"
+  },
+  "homepage": "https://github.com/BernardoEstrada/LeadSalesInterwiew#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "concurrently": "^6.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}
