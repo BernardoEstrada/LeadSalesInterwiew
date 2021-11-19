@@ -28,3 +28,18 @@ Design a parking lot using object-oriented principles
 - Your solution should be in TypeScript 
 - Display best practices using object oriented programming
 - Submit your code by a Github repository
+
+## Solution endpoints
+
+- `/pl` ->  Return parking lot as JSON.
+- `/park ->` Park a vehicle. Body: standard body (shown ahead)
+- `/available` -> Chech for available spots for given vehicle. Body: standard body (shown ahead)
+- `/isFull` -> Park a vehicle.
+
+Standard body:
+```
+{
+	"vehicle": "car"
+}	
+```
+Vehicle can be "motorcycle", "car" or "van"
