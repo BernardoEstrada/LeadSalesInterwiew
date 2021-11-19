@@ -37,9 +37,11 @@ Design a parking lot using object-oriented principles
 - `/isFull` -> Park a vehicle.
 
 Standard body:
-```
+
+```json
 {
-	"vehicle": "car"
-}	
+  "vehicle": "car"
+}
 ```
+
 Vehicle can be "motorcycle", "car" or "van"
