@@ -30,16 +30,15 @@ app.put('/park', (req, res) => {
 });
 
 app.get('/available', (req, res) => { 
-    console.log(req.body.vehicle);
     switch(req.body.vehicle) {
         case 'motorcycle':
-            res.send(pl.findAvailable(ParkingLot.defaultVehicles.motorcycle).length);
+            res.send({ "availableSpaces": pl.findAvailable(ParkingLot.defaultVehicles.motorcycle).length });
             break;
         case 'car':
-            res.send(pl.findAvailable(ParkingLot.defaultVehicles.car).length);
+            res.send({ "availableSpaces": pl.findAvailable(ParkingLot.defaultVehicles.car).length });
             break;
         case 'van':
-            res.send(pl.findAvailable(ParkingLot.defaultVehicles.van).length);
+            res.send({ "availableSpaces": pl.findAvailable(ParkingLot.defaultVehicles.van).length });
             break;
         default:
             res.sendStatus(400).send('Invalid vehicle type');
